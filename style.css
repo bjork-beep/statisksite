@@ -59,20 +59,21 @@ nav {
 .menu a:hover {
   color: rgb(236, 145, 9);
 }
+
+/*** foooter ***/
+footer {
+  background-color: white;
+  padding: 4rem;
+}
 main {
   margin: 4rem;
 }
 
-.grid_3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: lighter;
   padding-bottom: 3rem;
+  text-align: center;
 }
 h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -102,7 +103,12 @@ a {
 a:hover {
   color: rgb(236, 145, 9);
 }
-
+.grid_3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 4rem;
+}
 .knap1 {
   border: double 4px;
   border-radius: 20px;
@@ -114,6 +120,7 @@ a:hover {
   font-size: large;
   padding: 2rem;
   cursor: pointer;
+  max-width: 350px;
 }
 
 .container {

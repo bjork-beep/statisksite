@@ -161,6 +161,10 @@ a:hover {
   left: 14%;
 }
 
+.more {
+  padding-top: 1rem;
+}
+
 .box2 {
   line-height: 2rem;
 }

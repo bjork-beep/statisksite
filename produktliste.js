@@ -1,6 +1,9 @@
-const listCotainer = document.querySelector(".container");
+const myCategory = new URLSearchParams(window.location.search).get("category");
+// console.log("produktliste category", category);
 
-fetch(`https://kea-alt-del.dk/t7/api/products/`)
+const listContainer = document.querySelector(".container");
+
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${myCategory}`)
   .then((response) => response.json())
   .then((data) => showList(data));
 
@@ -25,5 +28,5 @@ function showList(products) {
     )
     .join("");
   console.log(markup);
-  listCotainer.innerHTML = markup;
+  listContainer.innerHTML = markup;
 }

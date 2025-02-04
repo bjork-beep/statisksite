@@ -20,7 +20,7 @@ function showList(products) {
                 <p>Prev. DKK 1595,- </p> 
                 <p> Now DKK ${product.price},-</p>
                 </div>
-                <a class="more" href="produkt.html">Read more</a>
+                <a class="more" href="produkt.html?id=${product.id}">Read more</a>
                 <div class="discount">
                     <p>28%</p>
                 </div>
